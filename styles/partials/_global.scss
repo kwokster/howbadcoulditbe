@@ -1,0 +1,228 @@
+//general styles
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif; 
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1170px;
+	width: 90%;
+}
+
+header, .life, .weather, .day, .severity, .results__section, footer.credits {
+	height: 100vh;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+//header section styles
+header {
+	background-image: url(../assets/hero.png);
+	background-size: cover; 
+}
+
+h1 {
+	font-size: 6em; 
+	padding-bottom: 20px;
+	background: white;
+}
+
+.header__main {
+	font-size: 8em;
+}
+
+.header__subMain {
+	border: 8px solid black;
+	padding-top: 1rem;
+	border-radius: 5px;
+}
+
+// form styles
+
+h2 {
+	font-size: 6em;
+}
+
+h3 {
+	font-size: 5em;
+}
+
+.selectedInput {
+	box-shadow: 7px 7px 7px white;
+}
+
+form {
+	input[type="radio"] {
+		visibility: hidden;
+	}
+	img {
+	width: 150px;
+	height: 150px;
+	} 
+}
+
+.subLabel label {
+	display:inline-block;
+	font-size: 2rem;
+}
+
+label:hover, label:active {
+    background:lightgrey;
+}
+
+// -------- day of the week label styling
+
+.day label {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	line-height: 126px;
+	border: 2px solid black;
+	padding: 10px;
+	border-radius: 50%;
+	font-size: 3em;
+}
+
+.day label:hover {
+	background: grey; 
+}
+
+.day .selectedInput {
+	box-shadow: 1px 0px 62px white;
+}
+
+//button styling 
+
+input[type=submit], input[type=reset] {
+	margin: 40px;
+	border: 2px solid black ;
+	border-radius: 12px;
+	transition-duration: 0.4s;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+	background: black;
+	color: lightgrey;
+}
+
+input[type=submit] {
+	font-size: 3.5em;
+    background: indianred;
+}
+
+.flex__submit {
+	display: flex;
+	justify-content: center;
+}
+
+input[type=reset] {
+	font-size: 2em;
+}
+
+
+
+//results section styling 
+
+.results__section {
+	height: 100vh;
+	font-size: 1.5em;
+	position: relative;
+		a:hover {
+		color: lightgrey;
+	}
+}
+
+.results__blurb {
+	font-size: 3em;
+    line-height: 43px;
+}
+
+.credit__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	bottom:0;
+	position: absolute;
+	font-size: 1.3em;
+}
+
+.follow__buttons {
+	margin: 5px;
+}
+
+//credits styling 
+
+.credits {
+	font-size: 1.5em;
+		a:hover {
+		color: grey;
+	}
+}
+
+
+//RESPONSIVE MEDIUM STYLES 
+
+@media (max-width: 800px) {
+	html {
+		font-size: 50%;
+	}
+	.credit__wrapper{
+		font-size: 2em;
+	}
+	.credits {
+		font-size: 2.3em;
+	}
+	.life label:nth-of-type(4) {
+		margin-top: 5%;
+	}
+	.weather .subLabel {
+		display: flex;
+	}
+
+}
+
+
+// RESPONSIVE SMALL STYLES 
+
+@media (max-width: 400px) {
+	html {
+		font-size: 30%;
+	}
+	form {
+		img {
+		width: 65px;
+		height: 65px;
+		} 
+	}
+	.day label {
+		width: 65px;
+	    height: 65px;
+	    margin: 5px;
+	    line-height: 41px;
+	}
+	.severity .subLabel {
+		display: flex;
+	}
+	input[type=reset] {
+	margin: 10px;
+	}
+}
+

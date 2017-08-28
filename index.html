@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<script src="https://use.fontawesome.com/e37f1bbc2e.js"></script>
+	<link type="image/png" href="assets/sadFace.png" rel="icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/styles.css">
+	<title>How bad could it be?</title>
+</head>
+<body>
+	<!-- HEADER -->
+	<header>
+		<div class="wrapper">
+			<h1 class=header__main>Having a bad day?</h1>
+			<h1 class=header__subMain>Click here for some perspective!</h1>
+		</div>
+	</header>
+	<!-- MAIN -->
+	<main>
+		<div class="wrapper">
+			<form action="">
+	<!-- Life section begins -->
+				<div class="life">
+					<h2>Tell us how bad your day is...</h2> 
+					<h3 class="life__header">Where is it falling apart?</h3>
+					<div class="subLabel">
+						<label for="work"><img src="assets/work.svg" alt="briefcase icon">Work</label>
+						<input type="radio" name="life__categories" value="work" id="work"> 
+						<label for="health"><img src="assets/health.svg" alt="stethoscope icon">Health</label>
+						<input type="radio" name="life__categories" value="health" id="health">
+						<label for="love">
+						<img src="assets/love.svg" alt="heart icon">Love</label>
+						<input type="radio" name="life__categories" value="love" id="love">
+						<label for="financial"><img src="assets/finance.svg" alt="money icon" class="classTry">Financial</label>
+						<input type="radio" name="life__categories" value="financial" id="financial">
+						<label for="other"><img src="assets/other.svg" alt="question mark icon">Other</label>
+						<input type="radio" name="life__categories" value="other" id="other">
+					</div>
+				</div>
+	<!-- Life section ends -->
+	<!-- Weather section begins -->
+				<div class="weather">
+						<h3 class="weather__header">Is the weather at least agreeing with you?</h3>
+					<div class="subLabel">
+						<label for="sunny"><img src="assets/sunny.svg" alt="sun icon">Sunny</label>
+						<input type="radio" name="weather__categories" value="sunny" id="sunny">
+						<label for="rainy"><img src="assets/rainy.svg" alt="rain icon">Rainy</label>
+						<input type="radio" name="weather__categories" value="rainy" id="rainy">
+						<label for="snowy"><img src="assets/snowy.svg" alt="snow icon">Snowy</label>
+						<input type="radio" name="weather__categories" value="snowy" id="snowy">
+						<label for="cloudy"><img src="assets/cloudy.svg" alt="cloud icon">Cloudy</label>
+						<input type="radio" name="weather__categories" value="cloudy" id="cloudy">
+					</div>
+				</div>
+	<!-- Weather section ends -->
+	<!-- Day section begins -->
+				<div class="day">
+					<h3 class="day__header">What day of the week is it?</h3>
+					<div>
+						<label for="monday">Mon</label>
+						<input type="radio" name="day__categories" value="monday" id="monday">
+						<label for="tuesday">Tues</label>
+						<input type="radio" name="day__categories" value="tuesday" id="tuesday">
+						<label for="wednesday">Wed</label>
+						<input type="radio" name="day__categories" value="wednesday" id="wednesday">
+						<label for="thursday">Thurs</label>
+						<input type="radio" name="day__categories" value="thursday" id="thursday">
+						<label for="friday">Fri</label>
+						<input type="radio" name="day__categories" value="friday" id="friday">
+						<label for="saturday">Sat</label>
+						<input type="radio" name="day__categories" value="saturday" id="saturday">
+						<label for="sunday">Sun</label>
+						<input type="radio" name="day__categories" value="sunday" id="sunday">
+					</div>
+				</div>
+	<!-- Day section ends -->
+	<!-- Severity section begins -->
+				<div class="severity">
+					<h3 class="severity__header">On a scale of bad to catastrophic, <br> what kind of a day are you having?</h3>
+					<div class="subLabel">
+						<label for="mild"><img src="assets/bad.svg" alt="stick figure falling icon">Bad</label>
+						<input type="radio" name="severity__categories" value="mild" id="mild">
+						<label for="medium"><img src="assets/horrible.svg" alt="stick figure falling off cliff icon">Horrible</label>
+						<input type="radio" name="severity__categories" value="medium" id="medium">
+						<label for="intense"><img src="assets/catastrophic.svg" alt="stick figure meteor falling icon">Catastrophic</label>
+						<input type="radio" name="severity__categories" value="intense" id="intense">
+					</div>
+						<div class="flex__submit">
+							<input type="submit" name="submit" value="Give me perspective!">
+						</div>
+				</div>
+	<!-- Severity section ends -->
+	<!-- Results section begins -->
+				<div class="results__section">
+					<div class="results__wrapper">
+						<p class="results__blurb"><span class="tweetify">Sucks that your having a bad day but at least you're not...</span></p>
+		                <input type="reset" name="reset" value="Give me more perspective!">
+	                </div>
+					<div class="credit__wrapper">
+	                	<p>Website created by: <a href="https://twitter.com/JonCLKwok">Jon Kwok</a> &amp; <a href="https://www.caterinavanherpt.com" target="_blank">Caterina van Herpt</a></p>
+	                	<div class="follow__buttons">
+		                	<a class="twitter-follow-button" href="https://twitter.com/JonCLKwok" data-show-count="false">Follow @JonCLKwok</a>
+		                	<a class="twitter-follow-button" href="https://twitter.com/caterina_vh" data-show-count="false">Follow @caterina_vh</a>
+	                	</div>
+	                	<a href="#credits">Icon Credits</a>
+	            	</div>
+	            </div>
+	<!-- Severity section ends -->
+	        </form>
+	    </div>
+	</main>
+	<!-- FOOTER ICON CREDITS-->
+	    <footer class="credits" id="credits">
+	    	<div class="wrapper">
+	    		<p>"Sad Face" icon by Mooms from <a href="thenounproject.com">the Noun Project</a></p> 
+				<p>"Briefcase" icon by Fantastic from <a href="thenounproject.com">the Noun Project</a></p> 
+				<p>"Stethoscope" icon by logan from <a href="thenounproject.com">the Noun Project</a></p>
+				<p>"Heart" icon by arjuazka from <a href="thenounproject.com">the Noun Project</a></p>
+				<p>"Money" icon by Gregor Cresnar from <a href="thenounproject.com">the Noun Project</a></p>
+				<p>"Question mark" icon by Gregor Cresnar from <a href="thenounproject.com">the Noun Project</a></p>
+				<p>"Sun" icon by Anastasia Latysheva from <a href="thenounproject.com">the Noun Project</a></p>
+				<p>"Rain" icon by Xicons.co from <a href="thenounproject.com">the Noun Project</a></p>
+				<p>"Snow" icon by Cassandra Cappello from <a href="thenounproject.com">the Noun Project</a></p>
+				<p>"Cloud" icon by Hea Poh from <a href="thenounproject.com">the Noun Project</a></p>
+				<p>"Stick figure falling" icon by Luis Prado from <a href="thenounproject.com">the Noun Project</a></p>
+				<p>"Stick figure falling off cliff" icon from <a href="thenounproject.com">the Noun Project</a></p>
+				<p>"Stick figure meteor falling" icon by Gan Khoon from <a href="thenounproject.com">the Noun Project</a></p> 
+			</div>
+	    </footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="scripts/script.js"></script>
+	<!-- script tag for the share results as tweet button -->
+	<script src="scripts/tweetify.min.js"></script>
+	<!-- script tag for follow jon/caterina on twitter buttons -->
+	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
